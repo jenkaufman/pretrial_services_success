@@ -2,7 +2,7 @@ import scipy.stats as stats
 import numpy as np
 
 def identify_n_p_variable(df, column):
-    x=df.groupby(column).agg({'TERMINATIONID':lambda x:x.mean()-60, column:lambda x:x.value_counts()})
+    x=df.groupby(column).agg({'TERMINATIONID':lambda x:x.mean(), column:lambda x:x.value_counts()})
     x=x.rename(columns={column:'count'})
     x=x.reset_index()
     return_list=[]
