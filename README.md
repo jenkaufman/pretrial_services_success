@@ -14,8 +14,8 @@ The data set is from my current employer, City and County of Denver, Department 
 
 ## Hypotheses
 Hypothesis 1
-* $H_0$: Pretrial services success rates do not vary by gender.<br>
-* $H_a$: Pretrial services success rates do vary by gender.<br>
+* $H_0$: Pretrial services success and gender are independent.<br>
+* $H_a$: Pretrial services success and gender are not independent.<br>
 
 
 Hypothesis 2 
