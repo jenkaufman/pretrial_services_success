@@ -15,15 +15,17 @@ def identify_n_p_variable(df, column):
         
 
 def find_confidence_intervals_binomial(n,p,variable):
-    binomial = stats.binom(n, p)
-    binomial_mean = n*p
-    binomial_var = n*p*(1-p)
-    normal_approx = stats.norm(binomial_mean, np.sqrt(binomial_var))
+    if n>30:
+        binomial = stats.binom(n, p)
+        binomial_mean = n*p
+        binomial_var = n*p*(1-p)
+        normal_approx = stats.norm(binomial_mean, np.sqrt(binomial_var))
 
-    CI_low=(normal_approx.ppf(.0025))/n
-    CI_high=(normal_approx.ppf(.975))/n
+        CI_low=(normal_approx.ppf(.0025))/n
+        CI_high=(normal_approx.ppf(.975))/n
 
-    print("Sample Mean for {} success: {:2.2}".format(variable, p))
-    print("95% confidence interval for the population mean: [{:2.2}, {:2.2}]".format(
-    CI_low, CI_high))
-    
+        print("Sample Mean for {} success: {:2.2}".format(variable, p))
+        print("95% confidence interval for the population mean: [{:2.2}, {:2.2}]".format(CI_low, CI_high))
+    else:
+        print("Sample Mean for {} success: {:2.2}".format(variable, p))
+        print("Sample is not over 30 and CI for population mean cannot be determined")
