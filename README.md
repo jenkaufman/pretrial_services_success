@@ -1,30 +1,39 @@
 # Pretrial Services Success
-Statistical analysis of Pretrial Services success rates
+Inferential statistical analysis of Pretrial Services success rates
 
 ***
 
-## Overview
+## Background and Motivation
 Pretrial Services in Denver Colorado provides supervision for defendants ordered by the Court to supervised conditions of release. Defendants can be released successfully from pretrial supervision once their case is sentenced or dismissed, or if supervision is terminated due to compliance. Defendants can also be released unsuccessfully from pretrial supervision if they fail to appear (FTA) for Court or receive new charges while under pretrial supervision.
 
-This project is to determine whether success rates vary by age, ethnicity, or length of supervision.
+This project was completed to infer population means and determine whether success rates vary by age, ethnicity, or length of supervision, as Pretrial Services is committed to making decisions that are equitable and data informed.
 
-The data set is from my current employer, City and County of Denver, Department of Public Safety, Community Corrections, and represents all defendants released from pretrial services during calendar years 2018 and 2019.
+The data set is confidential and is from my current employer, City and County of Denver, Department of Public Safety, Community Corrections.  The data set includes all defendants released from pretrial services during calendar years 2018 and 2019. 
 
 ***
 
-## Hypotheses and Results
+## Exploratory Data Analysis
+The data set includes information on length of supervision, level of supervision, supervision monitoring type, offense type, race, ethnicity, age, assessed risk category, primary offense, and termination reason.
+
+
+***
+
+## Hypotheses and Results 
+[Statistical Analysis](statistical_analysis.ipynb)<br>
+[Graphs](EDA/exploratory_data_analysis.ipynb)
 
 ### Age <br>
 <u>Hypothesis 1<u>
 * $H_0$: Successful and unsuccessful groups do not vary by age.<br>
 * $H_a$: Successful and unsuccessful groups do vary by age.<br>
-$\alpha$=0.05<br>
-Statistical test: Mann–Whitney U test<br>
+    * $\alpha$=0.05<br>
+    * Statistical test: Mann–Whitney U test<br>
+        * The Mann-Whitney U test tests whether observations in one sample tend to be larger than observations in a the other sample.
 
 ![Age](EDA/Age.png)
 
 
-<u>Result<u>
+<u>Result:<u>
     
 Fail to reject null hypothesis (p-value=0.6591)
 
@@ -32,12 +41,13 @@ Fail to reject null hypothesis (p-value=0.6591)
 <u>Hypothesis 2 <u>
 * $H_0$: Pretrial services success and gender are independent.<br>
 * $H_a$: Pretrial services success and gender are not independent.<br>
-$\alpha$ with Bonferroni Correction=0.025 (0.05/2)<br>
-Statistical test: Chi-squared test <br>
+    * $\alpha$ with Bonferroni Correction=0.025 (0.05/2)<br>
+    * Statistical test: Chi-Square Test of Independence <br>
+        * The Chi-Square Test of Independence determines whether there is an association between categorical variables.
 
 ![Gender](EDA/Gender.png)
 
-<u>Result<u>
+<u>Result:<u>
 
 Fail to reject null hypothesis (p-value=0.0406)
     
@@ -52,13 +62,14 @@ Utilizing the Central Limit Theorem, I am additionally able to determine:<br>
 <u>Hypothesis 3<u>
 * $H_0$: Pretrial services success and ethnicity are independent.<br>
 * $H_a$: Pretrial services success and ethnicity are not independent.<br>
-$\alpha$ with Bonferroni Correction=0.0166 (0.05/3)<br>alpha with Bonferroni Correction=0.025 (0.05/2)<br><br>
-Statistical test: Chi-squared test<br>
+    * $\alpha$ with Bonferroni Correction=0.0166 (0.05/3)<br>
+    * Statistical test: Chi-Square Test of Independence <br>
+        * The Chi-Square Test of Independence determines whether there is an association between categorical variables.
 
 ![Ethnicity](EDA/Ethnicity.png)
     
     
-<u>Result<u>
+<u>Result:<u>
 
 Fail to reject null hypothesis (p-value=0.168)
     
@@ -75,21 +86,25 @@ Utilizing the Central Limit Theorem, I am additionally able to determine:<br>
 <u>Hypothesis 4<u>
 * $H_0$: Successful and unsuccessful groups do not vary by length of supervision.<br>
 * $H_a$: Successful and unsuccessful groups do vary by length of supervision.<br>
-$\alpha$ with Bonferroni Correction=0.0125 (0.05/4)<br>
-Statistical test: Mann–Whitney U test<br>
+    * $\alpha$ with Bonferroni Correction=0.0125 (0.05/4)<br>
+    * Statistical test: Mann–Whitney U test<br>
+        * The Mann-Whitney U test tests whether observations in one sample tend to be larger than observations in a the other sample.
 
 ![Length](EDA/Length.png)
     
     
     
-<u>Result<u>
+<u>Result:<u>
     
 Reject null hypothesis (p-value=2.5334387817360213e-41)
     
 ***
 
-## Results
-
+## Summary of Findings
+    
 ***
 
 ## Future Analysis
+Future analysis could include answering the following questions:
+1. What stage are defendant most frequently terminiated unsuccessfully by risk level?
+2. Is there an amount of time engaged with Pretrial Services that leads to the majority of successes?
