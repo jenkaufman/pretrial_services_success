@@ -30,7 +30,7 @@ The data set includes information on length of supervision, level of supervision
     * Statistical test: Mann–Whitney U test<br>
         * The Mann-Whitney U test tests whether observations in one sample tend to be larger than observations in a the other sample.
 
-![Age](EDA/Age.png)
+![Age](EDA/Age_EDA.png) ![Age](Age.png)
 
 
 Result: Fail to reject null hypothesis (p-value=0.6591)
@@ -43,7 +43,7 @@ Result: Fail to reject null hypothesis (p-value=0.6591)
     * Statistical test: Chi-Square Test of Independence <br>
         * The Chi-Square Test of Independence determines whether there is an association between categorical variables.
 
-![Gender](EDA/Gender.png)
+![Gender](EDA/Gender_EDA.png) ![Gender](Gender.png)
 
 Result: Fail to reject null hypothesis (p-value=0.0406)
     
@@ -62,7 +62,7 @@ Utilizing the Central Limit Theorem, I am additionally able to determine:<br>
     * Statistical test: Chi-Square Test of Independence <br>
         * The Chi-Square Test of Independence determines whether there is an association between categorical variables.
 
-![Ethnicity](EDA/Ethnicity.png)
+![Ethnicity](EDA/Ethnicity_EDA.png) ![Ethnicity](Ethnicity.png)
     
     
 Result: Fail to reject null hypothesis (p-value=0.168)
@@ -83,11 +83,11 @@ Utilizing the Central Limit Theorem, I am additionally able to determine:<br>
     * $\alpha$ with Bonferroni Correction=0.0125 (0.05/4)<br>
     * Statistical test: Mann–Whitney U test<br>
         * The Mann-Whitney U test tests whether observations in one sample tend to be larger than observations in a the other sample.
+    
 
-![Length](EDA/Length.png)
-    
-    
-    
+![Length](EDA/Length_EDA.png)
+![Length](Length.png)
+     
 Result: Reject null hypothesis (p-value=2.5334387817360213e-41)
     
 ***
