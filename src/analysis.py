@@ -19,7 +19,7 @@ def find_confidence_intervals_binomial(n,p,variable):
         binomial = stats.binom(n, p)
         binomial_mean = n*p
         binomial_var = n*p*(1-p)
-        normal_approx = stats.norm(binomial_mean, np.sqrt(binomial_var/n))
+        normal_approx = stats.norm(binomial_mean, np.sqrt(binomial_var))
 
         CI_low=(normal_approx.ppf(.0025))/n
         CI_high=(normal_approx.ppf(.975))/n
