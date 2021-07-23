@@ -1,5 +1,5 @@
 # Pretrial Services Success
-Inferential statistical analysis of Pretrial Services success rates
+Inferential statistical analysis of Pretrial Services success 
 
 ***
 
@@ -15,13 +15,26 @@ The data set is confidential and is from my current employer, City and County of
 ## Exploratory Data Analysis
 The data set includes information on length of supervision, level of supervision, supervision monitoring type, offense type, race, ethnicity, age, assessed risk category, primary offense, and termination reason.
 
+Although I chose to complete hypothesis testing on age, gender, ethnicty, and length of supervision, in future analysis I would like to complete hypothesis testing on race, offense type, and assessed risk category.  
+
+Below are some initial exploratory data analysis graphs of this data. 
+![Race](EDA/EDA_images/Race_EDA.png)
+
+![Offense](EDA/EDA_images/Offense_EDA.png)
+
+![Risk](EDA/EDA_images/Risk_EDA.png)
 
 ***
 
 ## Hypotheses and Results 
-[Statistical Analysis](statistical_analysis.ipynb)<br>
-[Graphs](EDA/exploratory_data_analysis.ipynb)
 
+I completed hypothesis testing on age, gender, ethnicity, and length of supervision.  I chose these categories in an effort to ensure equitable services are being delivered to those under pretrial supervision.  Each hypothesis test is contained below and the notebooks can be found here:
+
+[Exploratory Data Analysis](EDA/exploratory_data_analysis.ipynb)
+
+[Statistical Analysis](statistical_analysis.ipynb)<br>
+
+***
 ### Age <br>
 <u>Hypothesis 1<u>
 * $H_0$: Successful and unsuccessful groups do not vary by age.<br>
@@ -93,10 +106,11 @@ Result: Reject null hypothesis (p-value=2.5334387817360213e-41)
 ***
 
 ## Summary of Findings
-    
+The findings would suggest that equitable services are being provided by pretrial supervision in regards to age, gender and ethnicity.  Defendants that are terminated unsuccessfully from pretrial supervision spend less time under pretrial supervision.  In future analysis, I would like to determine at what stage do defendants most often fail (first appearance, plea, etc.) and whether there is an ideal length of supervision that would lead to increasing success rates.
 ***
 
 ## Future Analysis
 Future analysis could include answering the following questions:
 1. What stage are defendant most frequently terminated unsuccessfully by risk level?
 2. Is there an amount of time engaged with Pretrial Services that leads to the majority of successes?
+3. Perform hypothesis test on race
