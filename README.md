@@ -113,4 +113,4 @@ The findings would suggest that equitable services are being provided by pretria
 Future analysis could include answering the following questions:
 1. What stage are defendant most frequently terminated unsuccessfully by risk level?
 2. Is there an amount of time engaged with Pretrial Services that leads to the majority of successes?
-3. Perform hypothesis test on race
+3. Perform hypothesis test on race, offense category, and risk level.
