@@ -15,7 +15,7 @@ The data set is confidential and is from my current employer, City and County of
 ## Exploratory Data Analysis
 The data set includes information on length of supervision, level of supervision, supervision monitoring type, offense type, race, ethnicity, age, assessed risk category, primary offense, and termination reason.
 
-Although I chose to complete hypothesis testing on age, gender, ethnicty, and length of supervision, in future analysis I would like to complete hypothesis testing on race, offense type, and assessed risk category.  
+Although I chose to complete hypothesis testing on age, gender, ethnicity, and length of supervision, in future analysis I would like to complete hypothesis testing on race, offense type, and assessed risk category.  
 
 Below are some initial exploratory data analysis graphs of this data. 
 ![Race](EDA/EDA_images/Race_EDA.png)
