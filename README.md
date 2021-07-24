@@ -84,7 +84,7 @@ Utilizing the Central Limit Theorem, I am additionally able to determine:<br>
     
 * Sample Mean for Hispanic success: 0.58<br>
 95% confidence interval for the population mean: [0.56, 0.59]<br>
-* Sample Mean for non-Hispanic success: 0.59<br>
+* Sample Mean for not-Hispanic success: 0.59<br>
 95% confidence interval for the population mean: [0.58, 0.6]<br>
 * Sample Mean for unknown success: 0.64<br>
 95% confidence interval for the population mean: [0.49, 0.74]<br>
