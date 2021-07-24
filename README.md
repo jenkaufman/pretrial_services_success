@@ -22,7 +22,7 @@ Below are some initial exploratory data analysis graphs of this data.
 
 ![Offense](EDA/EDA_images/Offense_EDA.png)
 
-![Risk](EDA/EDA_images/Risk_EDA.png)
+![Risk](EDA/EDA_images/risk_EDA.png)
 
 ***
 
